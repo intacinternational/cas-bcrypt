@@ -5,6 +5,9 @@ Rails-Devise - CAS Overlay Template
 
 Java CAS (Centralized Authentication Service) server implementing BCrypt capable validation for use with a Rails/Devise based backend.
 
+**Note**
+This repo requires that the `users` table have an additional column of `username`
+
 # Deployment
 
 ```
