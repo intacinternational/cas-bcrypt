@@ -9,12 +9,17 @@ Java CAS (Centralized Authentication Service) server implementing BCrypt capable
 
 ```
 $ vi etc/cas.properties 
-$ rsync -Pavz etc/ /etc/cas/
-$ chown tomcat8:tomcat8 -R /etc/cas
-$ mkdir /etc/cas/logs
+$ brew install tomcat
+$ sudo mkdir -p /etc/cas/logs
 $ chmod  ug+rw,o-rwx -R /etc/cas
-$ mvnw clean package
+$ # copy all cas configuration to /etc/cas
+$ cp -R etc/* /etc/cas/
+$ # build cas war
+$ mvn clean package
 $ # deploy target/cas.war to tomcat
+$ cp target/cas.war /usr/local/Cellar/tomcat/8.5.5/libexec/webapps/
+$ # run tomcat
+$ /usr/local/Cellar/tomcat/8.5.5/bin/catalina run
 ```
 
 # CAS Original README 
