@@ -1,9 +1,9 @@
-Wicket.io - CAS Overlay Template
+Rails-Devise - CAS Overlay Template
 ================================
 
 > 2015-11-25T11:29-0500
 
-Java CAS (Centralized Authentication Service) server implementing BCrypt capable validation.
+Java CAS (Centralized Authentication Service) server implementing BCrypt capable validation for use with a Rails/Devise based backend.
 
 # Deployment
 
